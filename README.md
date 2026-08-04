@@ -15,7 +15,12 @@ BioDex é uma aplicação web inspirada em uma **Pokédex**, mas voltada para a 
 - CSS3
 - JavaScript
 
-> Futuramente o projeto poderá utilizar APIs de reconhecimento de imagem e bancos de dados biológicos para ampliar a precisão e a quantidade de informações disponíveis.
+## 🔌 APIs
+
+### 🌿 PlantNet API
+- Identificação de plantas por meio de imagens.
+- Retorna informações como nome científico, família botânica e nível de confiança.
+
 
 ## 📂 Estrutura do Projeto
 
