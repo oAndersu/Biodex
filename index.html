@@ -1,12 +1,202 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodex</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>BioDex - Identificação de Plantas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-    <script src="assets/js/bio.js"></script>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i>
+            <h1>BioDex</h1>
+        </div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#camera">Identificar</a>
+            <a href="#info">Espécies</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Explore a natureza de uma forma inteligente.</h2>
+            <p>
+                BioDex é uma aplicação inspirada em uma Pokédex,
+                criada para identificar plantas através da câmera
+                do dispositivo.
+            </p>
+            <button>
+                Começar
+            </button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80">
+        </div>
+    </section>
+    <section class="camera" id="camera">
+        <h2>
+            <i class="fa-solid fa-camera"></i>
+            Identificação
+        </h2>
+        <div class="camera-box">
+            <i class="fa-solid fa-camera-retro"></i>
+            <p>
+                Área destinada à câmera.
+            </p>
+            <button>
+                Abrir câmera
+            </button>
+        </div>
+    </section>
+    <section class="search">
+        <h2>
+            Pesquisar Planta
+        </h2>
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Digite o nome da planta">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </section>
+    <section class="plant-info" id="info">
+        <h2>
+            Informações da Espécie
+        </h2>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=80">
+            <div class="content">
+                <h3>
+                    Monstera Deliciosa
+                </h3>
+                <span>
+                    Família: Araceae
+                </span>
+                <p>
+                    Planta tropical muito conhecida pelas
+                    folhas grandes e perfuradas.
+                </p>
+                <div class="grid">
+                    <div>
+                        <h4>
+                            Habitat
+                        </h4>
+                        <p>
+                            Florestas tropicais.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>
+                            Origem
+                        </h4>
+                        <p>
+                            América Central.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>
+                            Curiosidade
+                        </h4>
+                        <p>
+                            Pode atingir mais de 20 metros
+                            na natureza.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>
+                            Status
+                        </h4>
+                        <p>
+                            Espécie comum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="favorites">
+        <h2>
+            <i class="fa-solid fa-star"></i>
+            Favoritos
+        </h2>
+        <div class="cards">
+            <div class="mini-card">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Girassol</h3>
+            </div>
+            <div class="mini-card">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Orquídea</h3>
+            </div>
+            <div class="mini-card">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Samambaia</h3>
+            </div>
+        </div>
+    </section>
+    <section class="history">
+        <h2>
+            Histórico
+        </h2>
+        <ul>
+            <li>🌿 Costela-de-Adão</li>
+            <li>🌵 Cacto Mandacaru</li>
+            <li>🌺 Hibisco</li>
+            <li>🌴 Palmeira Imperial</li>
+            <li>🍀 Trevo</li>
+        </ul>
+    </section>
+    <section id="sobre" class="about">
+        <h2>
+            Sobre o BioDex
+        </h2>
+        <p>
+            BioDex é uma aplicação web inspirada em uma Pokédex,
+            mas voltada para a biodiversidade.
+        </p>
+        <p>
+            O projeto tem como objetivo facilitar a identificação
+            de plantas utilizando tecnologia moderna e promover
+            a educação ambiental.
+        </p>
+        <div class="techs">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div>
+                <i class="fa-solid fa-seedling"></i>
+                <h3>PlantNet API</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>
+            BioDex
+        </h2>
+        <p>
+            Identificando a biodiversidade através da tecnologia.
+        </p>
+        <p>
+            © 2026 BioDex
+        </p>
+    </footer>
 </body>
-</html> 
+</html>
