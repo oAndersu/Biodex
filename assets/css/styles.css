@@ -217,6 +217,65 @@ section h2{
     background:#256b45;
 }
 
+.capture-btn{
+    margin-top:20px;
+    display:none;
+}
+
+.capture-btn.visible{
+    display:inline-flex;
+}
+
+.camera-box video{
+    width:100%;
+    max-width:700px;
+    border-radius:24px;
+    margin-top:25px;
+    display:none;
+}
+
+.camera-box video.active{
+    display:block;
+}
+
+.camera-preview{
+    margin-top:20px;
+    display:none;
+    justify-content:center;
+}
+
+.camera-preview.visible{
+    display:flex;
+}
+
+.camera-preview img{
+    width:100%;
+    max-width:700px;
+    border-radius:24px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    display:none;
+}
+
+.camera-preview img.visible{
+    display:block;
+}
+
+.species-result{
+    margin-top:24px;
+    padding:18px 22px;
+    border-radius:18px;
+    background:rgba(46,139,87,.08);
+    color:#1f3d2a;
+    text-align:left;
+    font-size:16px;
+    line-height:1.6;
+}
+
+html.dark-mode .species-result{
+    background:rgba(78,195,102,.14);
+    color:#e8f7eb;
+}
+
 .repo-link-wrapper{
     display:flex;
     justify-content:center;
